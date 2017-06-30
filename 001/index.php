@@ -3,7 +3,7 @@
 require_once "jssdk.php";
 $jssdk = new JSSDK( APPID, APPSECRET );
 $signPackage = $jssdk->GetSignPackage();
-?>
+?> 
 <!DOCTYPE html>
 <html>
 <head>
