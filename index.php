@@ -21,7 +21,7 @@ $signPackage = $jssdk->GetSignPackage();
 </head>
 <style>
 body{
-	padding:0;
+	padding:0; 
 	margin:0;
 }
 .tt{
