@@ -1,9 +1,3 @@
-<?php
-//引入js类文件
-require_once "jssdk.php";
-$jssdk = new JSSDK( APPID, APPSECRET );
-$signPackage = $jssdk->GetSignPackage();
-?> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +15,7 @@ $signPackage = $jssdk->GetSignPackage();
 </head>
 <body>
 <script>
-	alert('666');
+	alert('我是刘建民');
 </script>
 </body>
 </html>
