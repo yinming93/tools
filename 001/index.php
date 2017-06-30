@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">	
 <link rel="stylesheet" href="dh.css">
-	<title>测一测，你是否有当老板的潜质！</title>
+	<title>测一测</title>
 </head>
 <body>
 <script>
