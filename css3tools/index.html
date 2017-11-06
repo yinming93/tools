@@ -1,0 +1,105 @@
+<!-- 
+From：http://www.f2e.name/case/css3/tools.html
+Time:2017.11.5
+author:yinming 
+QQ:934162347
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>css3简易动画库</title>
+<link rel="stylesheet" href="index.css">
+<script src="jquery.min.js"></script>
+</head>
+<body>
+<h1>css3动画</h1>
+<div style="position:absolute;top:40%;left:50%;">
+	<div id="zs" class="" style="width:100px;height:100px;background:red;"></div>
+
+	<textarea name="" id="daima" cols="20" rows="5" style="margin-top:50px;"></textarea>
+</div>
+
+<div style="margin-top:50px;">
+<h4>基本动画</h4>
+	<input type="button" q="sgd" value="闪光灯">
+	<input type="button" q="tq" value="弹起">
+	<input type="button" q="yaobai" value="摇摆">
+	<input type="button" q="qiuqian" value="秋千">
+	<input type="button" q="swing" value="swing">
+	<input type="button" q="fkbd" value="疯狂摆动">
+	<br><br>
+	<input type="button" q="maichong" value="脉冲">
+	<br><br>
+<h4>翻转</h4>
+	<input type="button" q="fz" value="翻转">
+	<input type="button" q="xzdr" value="X轴淡入">
+	<input type="button" q="xzdc" value="X轴淡出">
+	<input type="button" q="yzdr" value="Y轴淡入">
+	<input type="button" q="yzdc" value="Y轴淡出">
+<h4>淡入效果</h4>
+	<input type="button" q="dr" value="淡入">
+	<input type="button" q="xfdr" value="下方淡入">
+	<input type="button" q="sfdr" value="上方淡入">
+	<input type="button" q="zbdr" value="左边淡入">
+	<input type="button" q="ybdr" value="右边淡入">
+	<br><br>
+	<input type="button" q="ymxfdr" value="页面下方淡入">
+	<input type="button" q="ymsfdr" value="页面上方淡入">
+	<input type="button" q="ymzbdr" value="页面左边淡入">
+	<input type="button" q="ymybdr" value="页面右边淡入">
+<h4>淡出效果</h4>
+	<input type="button" q="dc" value="淡出">
+	<input type="button" q="sfdc" value="向上淡出">
+	<input type="button" q="xfdc" value="向下淡出">
+	<input type="button" q="zbdc" value="左边淡出">
+	<input type="button" q="ybdc" value="右边淡出">
+	<br><br>
+	<input type="button" q="ymsfdc" value="页面向上淡出">
+	<input type="button" q="ymxfdc" value="页面向下淡出">
+	<input type="button" q="ymzbdc" value="页面向左淡出">
+	<input type="button" q="ymybdc" value="页面向右淡出">
+<h4>弹跳进入效果</h4>
+	<input type="button" q="tr" value="弹入">
+	<input type="button" q="sftr" value="上方弹入">
+	<input type="button" q="xftr" value="下方弹入">
+	<input type="button" q="zbtr" value="左边弹入">
+	<input type="button" q="ybtr" value="右边弹入">
+<h4>弹跳退出效果</h4>
+	<input type="button" q="tc" value="弹出">
+	<input type="button" q="sftc" value="上方弹出">
+	<input type="button" q="xftc" value="下方弹出">
+	<input type="button" q="zbtc" value="左边弹出">
+	<input type="button" q="ybtc" value="右边弹出">
+<h4>旋转进入效果</h4>
+	<input type="button" q="xz" value="旋转进入">
+	<input type="button" q="zxzr" value="左下方进入">
+	<input type="button" q="yxzr" value="右下方进入">
+	<input type="button" q="zszr" value="左上方进入">
+	<input type="button" q="yszr" value="右下方进入">
+<h4>旋转退出效果</h4>
+	<input type="button" q="xztc" value="旋转退出">
+	<input type="button" q="zxzc" value="左下方退出">
+	<input type="button" q="yxzc" value="右下方退出">
+	<input type="button" q="zszc" value="左上方退出">
+	<input type="button" q="yszc" value="右下方退出">
+<h4>特效</h4>
+	<input type="button" q="zr" value="转入">
+	<input type="button" q="zc" value="转出">
+</div>
+</body>
+</html>
+<script>
+	$("input:button").on('click',function(){
+		// 获取属性q
+		var dh = $(this).attr("q");
+		// 设置动画
+		$("#zs").attr("class",dh);
+
+		// 获取textarea的内容
+		var daima = $("#daima").val();
+
+		// 输出动画类名
+		$("#daima").val(dh);
+		
+	})
+</script>
