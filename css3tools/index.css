@@ -865,7 +865,7 @@ opacity:1}
 100%{-moz-transform-origin:left top;
 -moz-transform:rotate(-90deg);
 opacity:0}
-}
+} 
 /*右上方旋转退出*/
 .yszc{
 -webkit-animation:rotateOutUpRight 1s .2s ease both;
